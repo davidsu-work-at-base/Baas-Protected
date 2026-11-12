@@ -1,0 +1,77 @@
+{
+  "name": "BookPopulated",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Book title"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name"
+    },
+    "isbn": {
+      "type": "string",
+      "description": "ISBN identifier"
+    },
+    "genre": {
+      "type": "string",
+      "enum": [
+        "fiction",
+        "non_fiction",
+        "science_fiction",
+        "fantasy",
+        "mystery",
+        "biography",
+        "history",
+        "poetry"
+      ],
+      "enumColors": [
+        "blue",
+        "gray",
+        "purple",
+        "pink",
+        "yellow",
+        "green",
+        "red",
+        "gray"
+      ],
+      "description": "Genre of the book"
+    },
+    "published_year": {
+      "type": "number",
+      "description": "Year of publication"
+    },
+    "pages": {
+      "type": "number",
+      "description": "Number of pages"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Average rating from 0 to 5"
+    },
+    "price": {
+      "type": "number",
+      "description": "Price in USD"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the book is available"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the book"
+    }
+  },
+  "required": [
+    "title",
+    "author"
+  ],
+  "rls": {
+    "read": {},
+    "create": {},
+    "update": {},
+    "delete": {}
+  }
+}
