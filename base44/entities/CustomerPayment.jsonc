@@ -1,0 +1,34 @@
+{
+  "name": "CustomerPayment",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Customer full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Customer email"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Customer phone number"
+    },
+    "billing_address": {
+      "type": "string",
+      "description": "Billing street address"
+    },
+    "card_last4": {
+      "type": "string",
+      "description": "Last 4 digits of the card"
+    },
+    "card_expiry": {
+      "type": "string",
+      "description": "Card expiry MM/YY"
+    }
+  },
+  "required": [
+    "full_name",
+    "email"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "EmployeeSalary",
+  "type": "object",
+  "properties": {
+    "employee_name": {
+      "type": "string",
+      "description": "Employee full name"
+    },
+    "national_id": {
+      "type": "string",
+      "description": "Government ID number"
+    },
+    "bank_account": {
+      "type": "string",
+      "description": "Payroll bank account number"
+    },
+    "annual_salary": {
+      "type": "string",
+      "description": "Gross annual salary in USD"
+    }
+  },
+  "required": [
+    "employee_name",
+    "national_id"
+  ]
+}

@@ -13,7 +13,9 @@
     "@base44/vite-plugin": "^1.0.52",
     "lucide-react": "^0.475.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "lodash": "4.17.20",
+    "minimist": "1.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
