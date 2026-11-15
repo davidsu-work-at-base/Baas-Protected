@@ -1,0 +1,30 @@
+{
+  "name": "Testimonial",
+  "type": "object",
+  "properties": {
+    "author_name": {
+      "type": "string",
+      "description": "Name shown under the quote"
+    },
+    "quote": {
+      "type": "string",
+      "description": "What the customer said"
+    },
+    "author_email": {
+      "type": "string",
+      "format": "email",
+      "description": "Customer email, used to follow up on the testimonial"
+    },
+    "author_phone": {
+      "type": "string",
+      "description": "Customer phone number, used to follow up on the testimonial"
+    }
+  },
+  "required": ["author_name", "quote"],
+  "rls": {
+    "create": {"user_condition": {"role": "admin"}},
+    "read": true,
+    "update": {"user_condition": {"role": "admin"}},
+    "delete": {"user_condition": {"role": "admin"}}
+  }
+}

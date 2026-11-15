@@ -1,0 +1,21 @@
+{
+  "name": "VipPerk",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Perk title"
+    },
+    "coupon_code": {
+      "type": "string",
+      "description": "Coupon code redeemable by VIP members"
+    }
+  },
+  "required": ["title"],
+  "rls": {
+    "create": {"user_condition": {"role": "admin"}},
+    "read": {"user_condition": {"data.is_vip": true}},
+    "update": {"user_condition": {"role": "admin"}},
+    "delete": {"user_condition": {"role": "admin"}}
+  }
+}
