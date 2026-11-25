@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@base44/sdk": "^0.8.62",
-    "@base44/vite-plugin": "^1.0.52",
+    "@base44/sdk": "^0.8.63",
+    "@base44/vite-plugin": "^1.0.54",
     "lodash": "4.17.20",
     "lucide-react": "^0.475.0",
     "minimist": "1.2.5",
